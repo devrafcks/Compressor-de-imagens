@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compressor de Imagens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Compressor de Imagens</h1>
+    </header>
+
+    <main>
+        <section class="dropzone" id="dropzone">
+            <p>Solte sua imagem aqui ou clique para selecionar</p>
+            <input type="file" id="imageInput" accept="image/*" hidden>
+        </section>
+
+        <section class="preview-container" id="imageProcessingArea" style="display: none;">
+            <img id="outputImage" alt="Imagem Comprimida">
+            <div class="compression-overlay" id="compressionOverlay">0% Comprimido</div>
+        </section>
+
+        <button id="downloadBtn" style="display: none;">Baixar Imagem Comprimida</button>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/devrafcks" target="_blank">Dev Rafcks</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
